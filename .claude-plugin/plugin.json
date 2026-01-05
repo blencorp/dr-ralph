@@ -2,7 +2,7 @@
   "name": "dr-ralph",
   "description": "Implementation of the Dr. Ralph technique - continuous self-referential AI loops for interactive iterative development. Run Claude in a while-true loop with the same prompt until task completion.",
   "author": {
-    "name": "Anthropic",
-    "email": "support@anthropic.com"
+    "name": "Mike Endale",
+    "email": "mike@blencorp.com"
   }
 }
