@@ -10,21 +10,22 @@ Dr. Ralph provides a structured 5-phase diagnostic workflow: Interview → Resea
 
 ## Installation
 
-### Option 1: Local Directory (Development)
+### Option 1: From GitHub (Recommended)
 
-Clone or download the plugin, then use the `--plugin-dir` flag:
+Add the plugin marketplace from GitHub:
 
 ```bash
-claude --plugin-dir /path/to/dr-ralph
+claude plugin marketplace add blencorp/dr-ralph
+claude plugin install dr-ralph
 ```
 
-### Option 2: Add as Local Marketplace
+### Option 2: Local Directory (Development)
 
-Add the plugin directory as a local marketplace:
+Clone the repo and use the `--plugin-dir` flag:
 
 ```bash
-claude plugin marketplace add /path/to/dr-ralph
-claude plugin install dr-ralph
+git clone git@github.com:blencorp/dr-ralph.git
+claude --plugin-dir /path/to/dr-ralph
 ```
 
 ### Option 3: Configure in settings.json
@@ -33,8 +34,9 @@ Add to your project's `.claude/settings.json`:
 
 ```json
 {
+  "marketplaces": ["blencorp/dr-ralph"],
   "plugins": {
-    "dr-ralph": "/path/to/dr-ralph"
+    "dr-ralph@blencorp": "enabled"
   }
 }
 ```
