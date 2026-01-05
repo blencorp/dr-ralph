@@ -184,12 +184,12 @@ Before asking about symptoms, check for existing medical records:
    - **Process files ONE BY ONE** (never all at once)
    - For EACH file:
      - Check file size first
-     - **If file > 2MB (2097152 bytes):**
+     - **If file > 3MB (3145728 bytes):**
        - Alert: "The file [filename] is [X]MB, which may be too large to process reliably."
        - Use AskUserQuestion: "How would you like to proceed with this file?"
          - Options: "Skip this file" / "I'll provide a smaller version"
-       - Suggest: "Tip: You can use Adobe Acrobat or similar tools to split large PDFs into smaller sections (under 2MB each)."
-     - **If file <= 2MB:**
+       - Suggest: "Tip: You can use Adobe Acrobat or similar tools to split large PDFs into smaller sections (under 3MB each)."
+     - **If file <= 3MB:**
        - Read and analyze the file
        - Extract key findings (dates, diagnoses, lab values, medications, etc.)
        - Note findings in patient notes

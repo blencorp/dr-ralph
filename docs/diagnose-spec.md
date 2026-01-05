@@ -37,11 +37,11 @@ Before symptom questions, ask about existing medical records:
    - Ask for file path(s) or directory
    - Check file sizes before reading (`ls -la` or `stat`)
    - **Process files ONE BY ONE** (never all at once)
-   - **Large file handling (>2MB):**
+   - **Large file handling (>3MB):**
      - Alert: "File [name] is [X]MB, which may be too large to process reliably."
      - Offer options: Skip file / Provide smaller version
-     - Suggest: "Use Adobe Acrobat to split large PDFs into sections under 2MB"
-   - **For files ≤2MB:** Read, analyze, extract key findings
+     - Suggest: "Use Adobe Acrobat to split large PDFs into sections under 3MB"
+   - **For files ≤3MB:** Read, analyze, extract key findings
    - If a file read fails, note error and continue with others
    - Track: files processed, skipped, failed
 

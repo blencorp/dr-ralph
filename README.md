@@ -48,9 +48,9 @@ Dr. Ralph provides a structured 5-phase diagnostic workflow: Interview → Resea
 **Medical Records Handling:**
 - Records are requested FIRST, before symptom questions
 - Files processed one-by-one (never all at once)
-- Size check before reading - files >2MB trigger warning
+- Size check before reading - files >3MB trigger warning
 - Options: skip large file or provide smaller version
-- Tip: Use Adobe Acrobat to split large PDFs into sections <2MB
+- Tip: Use Adobe Acrobat to split large PDFs into sections <3MB
 
 **Output Files:**
 - `@notes/[patient].md` - Running notes (persists across sessions)

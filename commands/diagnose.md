@@ -26,7 +26,7 @@ This command runs through 5 phases:
 ### 0. MEDICAL RECORDS FIRST
 Before symptom questions, ask if patient has medical records to share. Process files ONE BY ONE:
 - Check file size with `ls -la` or `stat` before reading
-- If file > 2MB: Alert user, offer to skip or provide smaller version
+- If file > 3MB: Alert user, offer to skip or provide smaller version
 - Suggest Adobe Acrobat to split large PDFs
 - Never let one bad file crash the workflow
 
