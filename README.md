@@ -8,6 +8,49 @@ A Claude Code plugin for AI-assisted medical diagnostics with comprehensive symp
 
 Dr. Ralph provides a structured 5-phase diagnostic workflow: Interview → Research → Differential Diagnosis → Treatment Plan → SOAP Report. It uses Claude Code's Stop hook system to iterate through phases until reaching a convincing diagnosis.
 
+## Installation
+
+### Option 1: Local Directory (Development)
+
+Clone or download the plugin, then use the `--plugin-dir` flag:
+
+```bash
+claude --plugin-dir /path/to/dr-ralph
+```
+
+### Option 2: Add as Local Marketplace
+
+Add the plugin directory as a local marketplace:
+
+```bash
+claude plugin marketplace add /path/to/dr-ralph
+claude plugin install dr-ralph
+```
+
+### Option 3: Configure in settings.json
+
+Add to your project's `.claude/settings.json`:
+
+```json
+{
+  "plugins": {
+    "dr-ralph": "/path/to/dr-ralph"
+  }
+}
+```
+
+Or to your user settings at `~/.claude/settings.json` for global access.
+
+### Verify Installation
+
+After installation, restart Claude Code and run:
+
+```bash
+/dr-ralph:help
+```
+
+See the [Claude Code plugins documentation](https://code.claude.com/docs/en/plugins) for more details.
+
 ## Quick Start
 ```bash
 /dr-ralph:diagnose "Persistent fatigue and joint pain" --patient "John Doe" --completion-promise "DONE"
@@ -218,6 +261,7 @@ dr-ralph/
 
 - Original Ralph technique: https://ghuntley.com/ralph/
 - Ralph Orchestrator: https://github.com/mikeyobrien/ralph-orchestrator
+- Ralph Wiggum Plugin: https://github.com/anthropics/claude-plugins-official/tree/main/plugins/ralph-wiggum
 
 ## Help
 
