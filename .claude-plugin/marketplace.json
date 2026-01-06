@@ -18,7 +18,7 @@
         "name": "Mike Endale",
         "email": "mike@blencorp.com"
       },
-      "source": ".",
+      "source": "./",
       "category": "healthcare",
       "tags": ["medical", "diagnostics", "SOAP", "healthcare", "ai-assisted"],
       "keywords": ["dr-ralph", "medical", "diagnosis", "treatment", "SOAP-report"]
