@@ -1,0 +1,27 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "dr-ralph-marketplace",
+  "owner": {
+    "name": "BLEN Corporation",
+    "email": "mike@blencorp.com"
+  },
+  "metadata": {
+    "description": "Dr. Ralph - AI-assisted medical diagnostics with comprehensive symptom analysis and research-backed treatment plans",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "dr-ralph",
+      "description": "Implementation of the Dr. Ralph technique - continuous self-referential AI loops for interactive iterative development. Run Claude in a while-true loop with the same prompt until task completion.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Mike Endale",
+        "email": "mike@blencorp.com"
+      },
+      "source": ".",
+      "category": "healthcare",
+      "tags": ["medical", "diagnostics", "SOAP", "healthcare", "ai-assisted"],
+      "keywords": ["dr-ralph", "medical", "diagnosis", "treatment", "SOAP-report"]
+    }
+  ]
+}
