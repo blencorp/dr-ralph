@@ -1,0 +1,9 @@
+{
+  "name": "dr-ralph",
+  "plugins": [
+    {
+      "name": "dr-ralph",
+      "source": "./"
+    }
+  ]
+}
